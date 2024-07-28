@@ -1,0 +1,14 @@
+{
+  "name": "proyecto",
+  "version": "1.0.2",
+  "main": "app.js",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security",
+    "node-fetch": "^3.3.2",
+    "node-hid": "^3.1.0",
+    "nodemon": "^3.1.4"
+  }
+}
