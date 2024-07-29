@@ -9,6 +9,7 @@
     "fs": "^0.0.1-security",
     "node-fetch": "^3.3.2",
     "node-hid": "^3.1.0",
+    "node-rtsp-stream": "^0.0.9",
     "nodemon": "^3.1.4"
   }
 }

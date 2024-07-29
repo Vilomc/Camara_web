@@ -6,38 +6,35 @@
     <title>Casita de Mati</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jsmpeg/0.2/jsmpg.min.js"></script>
-
 </head>
 <body class="main">
-    <header class="header">
-
-    </header>
+    <header class="header"></header>
     
-<div class="div-container">
-    <div id="video-canvas" class="video-canvas"></div>
-    <script>
-        const url = 'URL_AL_WS_VIDEO'; 
-        const player = new JSMpeg.Player(url, {
-            canvas: document.getElementById('video-canvas')
-        });
-    </script>
-<div class="button-container">
-    <button class="direction-button up-arrow">↑</button>
-    <button class="direction-button left-arrow">←</button>
-    <button class="direction-button right-arrow">→</button>
-    <button class="direction-button down-arrow">↓</button>
-</div>
+    <div class="div-container">
+        <div id="video-canvas" class="video-canvas">
+            <img src="http://localhost:9999/streamvideo" alt="">
+        </div>
 
-</div>
+        <div class="button-container">
+            <button class="direction-button up-arrow" onclick="handlerCamaraWebControler('0', '1')">↑</button>
+            <button class="direction-button left-arrow" onclick="handlerCamaraWebControler('4', '1')">←</button>
+            <button class="direction-button right-arrow" onclick="handlerCamaraWebControler('4', '1')">→</button>
+            <button class="direction-button down-arrow" onclick="handlerCamaraWebControler('2', '1')">↓</button>
+        </div>
 
-
-<footer class="footer">
-    <div class="social-links">
-        <a href="https://github.com/Vilomc?">
-        <img src="./assets/images/github-mark-white.png" alt="GitHub Logo" class="social-icon">Vilomc</a>
+        <script type="module">
+            import { handlerCamaraWebControler } from './assets/js/handlerCamaraWebControler.js';
+            window.handlerCamaraWebControler = handlerCamaraWebControler;
+        </script>
     </div>
-    <p>&copy; 2024 Casita de Mati. Todos los derechos reservados.</p>
 
-</footer>
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://github.com/Vilomc?">
+                <img src="./assets/images/github-mark-white.png" alt="GitHub Logo" class="social-icon">Vilomc
+            </a>
+        </div>
+        <p>&copy; 2024 Casita de Mati. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
