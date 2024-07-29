@@ -120,3 +120,30 @@ footer {
     height: 20px;
     width: 20px;
 }
+.snapshot-button{
+    background-color: white;
+}
+.camera-icon {
+    border-radius: 5px;
+    height: auto;
+    width: auto;
+}
+
+.camera-icon:hover {
+    background-color: #72787f;
+}
+.snapshot-button {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.snapshot-button:hover {
+    background-color: #72787f;
+}

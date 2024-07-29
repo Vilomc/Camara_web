@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,10 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jsmpeg/0.2/jsmpg.min.js"></script>
 </head>
+
 <body class="main">
     <header class="header"></header>
-    
+
     <div class="div-container">
         <div id="video-canvas" class="video-canvas">
             <img src="http://localhost:9999/streamvideo" alt="">
@@ -18,13 +20,18 @@
         <div class="button-container">
             <button class="direction-button up-arrow" onclick="handlerCamaraWebControler('0', '1')">↑</button>
             <button class="direction-button left-arrow" onclick="handlerCamaraWebControler('4', '1')">←</button>
-            <button class="direction-button right-arrow" onclick="handlerCamaraWebControler('4', '1')">→</button>
+            <button class="direction-button right-arrow" onclick="handlerCamaraWebControler('6', '1')">→</button>
             <button class="direction-button down-arrow" onclick="handlerCamaraWebControler('2', '1')">↓</button>
+            <button class="snapshot-button snapshot-button" onclick="takeSnapshot()">
+                <img src="./assets/images/camera.png" alt="camera" class="camera-icon">
+            </button>
         </div>
 
         <script type="module">
             import { handlerCamaraWebControler } from './assets/js/handlerCamaraWebControler.js';
+            import { takeSnapshot } from './assets/js/handlerSnapshotWeb.js';
             window.handlerCamaraWebControler = handlerCamaraWebControler;
+            window.takeSnapshot = takeSnapshot;
         </script>
     </div>
 
@@ -37,4 +44,5 @@
         <p>&copy; 2024 Casita de Mati. Todos los derechos reservados.</p>
     </footer>
 </body>
+
 </html>
