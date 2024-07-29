@@ -39,7 +39,7 @@ body {
     border: 3px solid #000000;
     border-radius: 10px;
     background-color: #333;
-    position: relative; /
+    position: relative; 
     left: calc(33.333% - (640px / 2)); /* Alinea a un tercio horizontalmente */
 }
 .button-container {
