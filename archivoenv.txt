@@ -1,0 +1,5 @@
+CONTROL_URL=http://IP:PORT/decoder_control.cgi
+LOGIN_USER="user / admin / invited /etc"
+LOGIN_PASS="pass for user"
+VIDEOSTREAM_URL=http://IP:PORT/videostream.cgi
+PORT=port of preference
