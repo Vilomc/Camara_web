@@ -2,7 +2,7 @@
 import express from "express";
 import { config } from "dotenv";
 import { handlerCamara } from './private/handlerCamara.js';
-import { device } from "./private/handlerJoystick.js";
+//import { device } from "./private/handlerJoystick.js";
 import { streamVideo } from './private/handlerVideo.js';
 import { fileURLToPath } from 'url';
 import path from "path";
